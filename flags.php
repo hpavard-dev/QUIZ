@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style.css" />
 	<title>Quiz Union Européenne</title>
 </head>
 
@@ -30,9 +30,9 @@
 				$countryCode = $data['ISO_3166'];
 				echo 'Quelle est le drapeau '.$data['pronoun'].$data['state_name'].' ?';
 
-				$capital = $data['capital'];
+				$flag = $data['flag'];
 
-				echo "<script>localStorage.setItem('capital', '".$capital."')</script>";
+				echo "<script>localStorage.setItem('capital', '".$flag."')</script>";
 
 
 			}
@@ -63,7 +63,7 @@
 						'<div class="answers">
 							<input type="radio" name="answer" value="'.$data["country_flag"].'">
 								<div class="flag">
-									<img class="imageFlag" src="'.$data["country_flag"].'">
+									<img class="imageFlag" src="'.$data["country_flag"].'" />
 								</div>
 							</input>
 						</div>';

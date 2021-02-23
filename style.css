@@ -60,6 +60,7 @@ body
 
 .imageFlag
 {
-	max-width: 10%;
-	max-height: 10%;
+	max-width: 200%;
+	max-height: 200%;
+	margin-right: 50px;
 }

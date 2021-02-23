@@ -25,7 +25,7 @@ CREATE TABLE `states` (
   `state_name` varchar(225) NOT NULL,
   `capital` varchar(225) NOT NULL,
   `date` int(4) NOT NULL,
-  `flag` varchar(2) NOT NULL,
+  `flag` varchar(225) NOT NULL,
   `pronoun` varchar(225) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 

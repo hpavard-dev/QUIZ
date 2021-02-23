@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8"/>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style.css" />
 	<title>Quiz Union Européenne</title>
 </head>
 
@@ -22,19 +22,19 @@
 
 		<div class="choice">
 			<a href="quiz.php">
-				<img class="imageChoice" src="img/capitals.jpg">
+				<img class="imageChoice" src="img/capitals.jpg" />
 			</a>
 		</div>
 
 		<div class="choice">
 			<a href="flags.php">
-				<img class="imageChoice" src="img/flags.jpg">
+				<img class="imageChoice" src="img/flags.jpg" />
 			</a>
 		</div>
 
 		<div class="choice">
 			<a href="dates.php">
-				<img class="imageChoice" src="img/dates.jpg">
+				<img class="imageChoice" src="img/dates.jpg" />
 			</a>
 		</div>
 
