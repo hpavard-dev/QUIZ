@@ -51,7 +51,7 @@
 			<?php
 				$query2 = $db->prepare
 				('
-					SELECT * 
+					SELECT country_flag
 					FROM answers_flags
 					WHERE ISO_3166_state = :countryCode
 					ORDER BY rand()
@@ -61,8 +61,10 @@
 				{
 					echo
 						'<div class="answers">
-							<input type="radio" name="answer" value="'.$data["coutry_flag"].'">
-								
+							<input type="radio" name="answer" value="'.$data["country_flag"].'">
+								<div class="flag">
+									<img class="imageFlag" src="'.$data["country_flag"].'">
+								</div>
 							</input>
 						</div>';
 				}
