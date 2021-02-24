@@ -60,4 +60,4 @@ INSERT INTO `states` (`ISO_3166`, `state_name`, `capital`, `date`, `flag`, `pron
 ('CY', 'Chypre', 'Nicosie', 2004, 'img/flags/cy.png', 'de '),
 ('RO', 'Roumanie', 'Bucarest', 2007, 'img/flags/ro.png', 'de la '),
 ('BG', 'Bulgarie', 'Sofia', 2007, 'img/flags/bg.png', 'de la '),
-('HR', 'Croatie', 'Zabreg', 2013, 'img/flags/hr.png', 'de la ');
+('HR', 'Croatie', 'Zagreb', 2013, 'img/flags/hr.png', 'de la ');

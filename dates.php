@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="style.css" />
-	<title>Quiz Union Européenne</title>
-</head>
+<?php include("head.php"); ?>
 
 <body>
 
@@ -33,8 +26,6 @@
 				$date = $data['date'];
 
 				echo "<script>localStorage.setItem('date', '".$date."')</script>";
-
-
 			}
 		?>
 	</div>
@@ -72,7 +63,9 @@
 			à la date indiquée dans la table des pays.
 			-->
 
-			<input type="submit" class="title" value="Vérifier" />
+			<div class="check">
+				<input type="submit" class="title" value="Vérifier" />
+			</div>
 		</form>
 	</div>
 
@@ -88,21 +81,12 @@
 
 	<script language="javascript">
 
-		/*
-		La fonction "écoute" l'événement "submit"
-		du formulaire.
-		*/
-
 		let form = document.querySelector("#form1");
 
-		form.addEventListener("submit", function(event)
+		form.addEventListener("submit",
+		
+		function(event)
 		{
-			
-			/*
-			La variable "valeur" est égale à la valeur
-			de input qui est cochée.
-			*/			
-
 			var valeur = document.querySelector('input[name=answer]:checked').value;
 			
 			if (valeur == localStorage.getItem("date"))
@@ -113,7 +97,6 @@
 			{
 				alert("Mauvaise réponse.");
 			}
-
 		})
 
 	</script>

@@ -18,7 +18,10 @@ body
 	display: flex;
   	align-items: center;
   	justify-content: center;
-	border: solid black 1px;
+	color: #07198D;
+	font-family: Arial;
+	border: solid #07198D 3px;
+	border-radius: 10px;
 	height: auto;
 	width: auto;
 	margin: 20px;
@@ -27,15 +30,17 @@ body
 
 .answers
 {
-	display: flex;
+   	text-align: center;
+   	display: flex;
   	align-items: center;
-  	justify-content: center;
-	border: solid black 1px;
-	margin: 20px;
-	padding: 20px;
-	height: 100px;
-	width: 100px;
-
+   	justify-content: center;
+   	border: solid #07198D 3px;
+	border-radius: 10px;
+	font-family: Arial;
+   	margin: 20px;
+   	padding: 20px;
+   	height: 50px;
+   	width: 150px;
 }
 
 .choice
@@ -53,14 +58,40 @@ body
 
 .flag
 {
-	width: auto;
-	height: auto;
-	margin: 20px;
+	width: 60%;
+	height: 60%;
 }
 
-.imageFlag
-{
-	max-width: 200%;
-	max-height: 200%;
-	margin-right: 50px;
+.imageFlag {
+    max-width: 100%;
+    max-height: 100%;
 }
+
+form
+{
+  	display: grid;
+  	grid-template-columns: 1fr 1fr;
+}
+
+input
+{
+	align-items: center;
+	width: max-content;
+}
+
+.check
+{
+	font-family: Arial;
+   	margin-left: 20px;
+   	height: auto;
+   	width: auto;
+}
+
+.aboutBox
+{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: auto;
+  }
